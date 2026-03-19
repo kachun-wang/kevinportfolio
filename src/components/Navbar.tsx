@@ -305,13 +305,13 @@ export default function Navbar() {
 
             {/* Resume Link - Desktop */}
             <motion.a
-              href="/resume/Kevin_Chung_Resume.pdf"
+              href="https://drive.google.com/file/d/13KZWdnksjmLsWxq_IbGXDjk0qCgTRziN"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="hidden items-center gap-2 rounded-full border border-purple-400/50 bg-purple-500/20 px-4 py-2 text-sm font-medium text-purple-200 backdrop-blur-sm transition-all hover:border-purple-400/70 hover:bg-purple-500/30 md:inline-flex"
-              aria-label="Download Resume"
+              aria-label="Resume"
             >
               <FileText className="h-4 w-4" />
               <span>Resume</span>
@@ -429,12 +429,12 @@ export default function Navbar() {
                   <span>GitHub</span>
                 </a>
                 <a
-                  href="/resume/Kevin_Chung_Resume.pdf"
+                  href="https://drive.google.com/file/d/13KZWdnksjmLsWxq_IbGXDjk0qCgTRziN"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
                   className="inline-flex items-center gap-2 rounded-full border border-purple-400/50 bg-purple-500/20 px-5 py-2 text-base font-medium text-purple-200 backdrop-blur-md transition-all hover:border-purple-400/70 hover:bg-purple-500/30"
-                  aria-label="Download Resume"
+                  aria-label="Resume"
                 >
                   <FileText className="h-4 w-4" />
                   <span>Resume</span>

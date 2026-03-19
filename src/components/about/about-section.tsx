@@ -281,7 +281,7 @@ export function AboutSection() {
             </motion.a>
 
             <motion.a
-              href="/resume/Kevin_Chung_Resume.pdf"
+              href="https://drive.google.com/file/d/13KZWdnksjmLsWxq_IbGXDjk0qCgTRziN"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -294,7 +294,7 @@ export function AboutSection() {
               )}
             >
               <Download className="h-5 w-5" />
-              Download Resume
+              Resume
             </motion.a>
           </div>
         </motion.div>
