@@ -281,7 +281,7 @@ export function AboutSection() {
             </motion.a>
 
             <motion.a
-              href="https://drive.google.com/file/d/13KZWdnksjmLsWxq_IbGXDjk0qCgTRziN"
+              href="https://drive.google.com/file/d/1b6MkvejXd4xWF_74b-ic7idN_h1hgm1g"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
