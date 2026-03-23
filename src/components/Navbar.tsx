@@ -287,81 +287,6 @@ export default function Navbar() {
             router={router}
             activeSection={activeSection}
           />
-
-          {/* Right: Actions */}
-          <div className="flex items-center gap-2 md:gap-3">
-            {/* GitHub Link - Desktop */}
-            <motion.a
-              href="https://github.com/kevendev523"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="hidden h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/30 text-white/80 backdrop-blur-md transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white md:flex"
-              aria-label="GitHub Profile"
-            >
-              <Github className="h-4 w-4" />
-            </motion.a>
-
-            {/* Resume Link - Desktop */}
-            <motion.a
-              href="https://drive.google.com/file/d/1b6MkvejXd4xWF_74b-ic7idN_h1hgm1g"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="hidden items-center gap-2 rounded-full border border-purple-400/50 bg-purple-500/20 px-4 py-2 text-sm font-medium text-purple-200 backdrop-blur-sm transition-all hover:border-purple-400/70 hover:bg-purple-500/30 md:inline-flex"
-              aria-label="Resume"
-            >
-              <FileText className="h-4 w-4" />
-              <span>Resume</span>
-            </motion.a>
-
-            {/* Get in Touch - Desktop */}
-            <button
-              onClick={() => handleHashLink("#contact", router, pathname)}
-              className="hidden items-center gap-2 rounded-full border border-cyan-400/50 bg-cyan-500/20 px-4 py-2 text-sm font-medium text-cyan-200 shadow-[0_0_18px_rgba(34,211,238,0.35)] backdrop-blur-sm transition-all duration-200 hover:bg-cyan-500/40 hover:text-cyan-50 md:inline-flex"
-            >
-              <span>Get in Touch</span>
-            </button>
-
-            {/* Mobile menu toggle */}
-            <motion.button
-              whileTap={{ scale: 0.9 }}
-              whileHover={{ scale: 1.05 }}
-              onClick={() => setMobileOpen((open) => !open)}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/40 text-white/80 shadow-md shadow-black/40 backdrop-blur-md md:hidden"
-              aria-label={
-                mobileOpen ? "Close navigation menu" : "Open navigation menu"
-              }
-            >
-              <AnimatePresence initial={false} mode="wait">
-                {mobileOpen ? (
-                  <motion.span
-                    key="close"
-                    initial={{ opacity: 0, rotate: -30 }}
-                    animate={{ opacity: 1, rotate: 0 }}
-                    exit={{ opacity: 0, rotate: 30 }}
-                    transition={{ duration: 0.18 }}
-                    className="flex"
-                  >
-                    <X className="h-5 w-5" />
-                  </motion.span>
-                ) : (
-                  <motion.span
-                    key="menu"
-                    initial={{ opacity: 0, rotate: 30 }}
-                    animate={{ opacity: 1, rotate: 0 }}
-                    exit={{ opacity: 0, rotate: -30 }}
-                    transition={{ duration: 0.18 }}
-                    className="flex"
-                  >
-                    <Menu className="h-5 w-5" />
-                  </motion.span>
-                )}
-              </AnimatePresence>
-            </motion.button>
-          </div>
         </div>
       </motion.header>
 
@@ -411,35 +336,6 @@ export default function Navbar() {
                   )}
                 </motion.div>
               ))}
-
-              {/* GitHub and Resume Links - Mobile */}
-              <motion.div
-                variants={mobileLinkVariants}
-                className="flex items-center gap-4 pt-4"
-              >
-                <a
-                  href="https://github.com/kevendev523"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileOpen(false)}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-5 py-2 text-base font-medium text-white/90 backdrop-blur-md transition-all hover:border-white/40 hover:bg-white/10"
-                  aria-label="GitHub Profile"
-                >
-                  <Github className="h-4 w-4" />
-                  <span>GitHub</span>
-                </a>
-                <a
-                  href="https://drive.google.com/file/d/1b6MkvejXd4xWF_74b-ic7idN_h1hgm1g"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileOpen(false)}
-                  className="inline-flex items-center gap-2 rounded-full border border-purple-400/50 bg-purple-500/20 px-5 py-2 text-base font-medium text-purple-200 backdrop-blur-md transition-all hover:border-purple-400/70 hover:bg-purple-500/30"
-                  aria-label="Resume"
-                >
-                  <FileText className="h-4 w-4" />
-                  <span>Resume</span>
-                </a>
-              </motion.div>
 
               <motion.div variants={mobileLinkVariants} className="pt-2">
                 <button

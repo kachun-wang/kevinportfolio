@@ -263,40 +263,6 @@ export function AboutSection() {
           <p className="mb-6 text-white/50">
             Interested in working together? Let&apos;s build something amazing.
           </p>
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <motion.a
-              href={`mailto:${bio.email}`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              className={cn(
-                "inline-flex items-center gap-2 rounded-2xl px-8 py-4",
-                "bg-gradient-to-r from-purple-600 to-cyan-600",
-                "text-lg font-semibold text-white",
-                "shadow-lg shadow-purple-500/25",
-                "transition-all hover:shadow-xl hover:shadow-purple-500/30"
-              )}
-            >
-              <Mail className="h-5 w-5" />
-              Get in Touch
-            </motion.a>
-
-            <motion.a
-              href="https://drive.google.com/file/d/1b6MkvejXd4xWF_74b-ic7idN_h1hgm1g"
-              download
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              className={cn(
-                "inline-flex items-center gap-2 rounded-2xl px-8 py-4",
-                "border border-white/20 bg-white/5",
-                "text-lg font-semibold text-white/90",
-                "backdrop-blur-sm",
-                "transition-all hover:border-white/30 hover:bg-white/10"
-              )}
-            >
-              <Download className="h-5 w-5" />
-              Resume
-            </motion.a>
-          </div>
         </motion.div>
       </div>
     </section>

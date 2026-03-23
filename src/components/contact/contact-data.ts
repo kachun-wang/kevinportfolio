@@ -8,13 +8,6 @@ export const contactInfo = {
 
 export const socialLinks = [
   {
-    name: "GitHub",
-    handle: "kevindev523",
-    url: "https://github.com/kevindev523",
-    icon: "github",
-    color: "#ffffff",
-  },
-  {
     name: "Email",
     handle: "kevinchung523@outlook.com",
     url: "mailto:kevinchung523@outlook.com",

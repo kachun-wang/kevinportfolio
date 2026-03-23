@@ -24,7 +24,7 @@ export const bio = {
 
 When I'm not optimizing inference latency or debugging data pipelines, you'll find me exploring California's tech scene, practicing kendo, or contributing to open-source ML tools.`,
   email: "kevinchung523@outlook.com",
-  github: "https://github.com/kevindev523",
+  github: "",
   x: "",
   telegram: "",
 };
